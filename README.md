@@ -1,5 +1,5 @@
 # Isabelle
-Accept and post about After the Collapse crashes in our development channels
+Accept app crash ZIPs via Discord or e-mail and post them as Discord messages and GitHub issues
 
 ## Set up
 If you are using Go 1.14+, download it using `go get` (this will place the executable in `$GOBIN`):
