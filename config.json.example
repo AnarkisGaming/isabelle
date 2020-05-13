@@ -1,0 +1,31 @@
+{
+    "discord": {
+        "token": "[bot token - https://discord.com/developers/applications. make sure to add your bot to the discord server. make sure it has access to read/write to your target channel. https://discordpy.readthedocs.io/en/latest/discord.html]",
+        "output": "[channel id - enable developer mode, right click channel, copy ID.]",
+    },
+    "email": {
+        "host": "[email host, i.e. pop.gmail.com:993]",
+        "user": "[email username]",
+        "pass": "[email password]",
+        "every": 60 // check email every X seconds. should be divisible by 10
+    },
+    "github": {
+        "pat": "[github personal access token. obtain at https://github.com/settings/tokens. make sure it has read access to repository]",
+        "repo": "[user]/[repo]",
+        "labels": [
+            "crash-report"
+        ],
+        "react": "[name of emoji to listen for to add a new issue to the github repository. if you're using a unicode character, paste it here (i.e. ❗). if you're using a custom emoji, put the name of the emoji here without the colons."
+    },
+    "messages": {
+        "InvalidFile": "Oops! It doesn't seem that your file is a valid crash report. Remember, crash reports are in your After the Collapse game folder and end in .zip.",
+        "BadZIP": "Oops! I had a bit of trouble reading your crash report. Please make sure that it is a valid crash report, and try again.",
+        "BadDownload": "Oops! I had a bit of trouble obtaining your uploaded file. Could you try to upload it again?",
+        "Help": "Hi, %s! If you have a bug to report, please attach *only* the .zip file below and (optionally) include a short (<140 character) message describing your issue. Sorry for the inconvienence!",
+        "Success": "Thanks for submitting this bug report! We'll take a look at it ASAP."
+    },
+    "files": {
+        "file1": "Exception.xml [if this ends in XML, it will be parsed as a C# SerializedException. otherwise the raw file will be sent. limit 1500 char]",
+        "file2": "files/specs.txt [the raw file is always used here. limit 300 char]"
+    }
+}
