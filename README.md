@@ -1,6 +1,8 @@
 # Isabelle
 Accept app crash ZIPs via Discord or e-mail and post them as Discord messages and GitHub issues
 
+[![Build](https://github.com/AnarkisGaming/isabelle/workflows/Build/badge.svg?event=push)](https://github.com/AnarkisGaming/isabelle/actions)
+
 ## Set up
 If you are using Go 1.14+, download it using `go get` (this will place the executable in `$GOBIN`):
 
@@ -8,7 +10,7 @@ If you are using Go 1.14+, download it using `go get` (this will place the execu
 go get -u get.cutie.cafe/isabelle
 ```
 
-Otherwise, you should be able to use a stable release from the Releases section. NB: if you're using ancient versions of Linux, you may have to build the app yourself (see below).
+Otherwise, you should be able to use a [stable release](https://github.com/AnarkisGaming/isabelle/releases) or [development release](https://github.com/AnarkisGaming/isabelle/actions). If you're using ancient versions of Linux, you may have to build the app yourself (see below).
 
 Then, download config.json.example and move it to config.json. Fill out all of the fields. After, you can just run `isabelle.exe` or `./isabelle`.
 
