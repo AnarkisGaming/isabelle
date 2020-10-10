@@ -3,8 +3,8 @@ on:
  - push
 
 jobs:
-  build:
-    name: Build
+  linux64:
+    name: Build (Linux x64)
     runs-on: ubuntu-latest
     steps:
       - name: Set up Go 1.14
@@ -13,10 +13,27 @@ jobs:
           go-version: 1.14
       - name: Checkout
         uses: actions/checkout@v1
-      - name: Build
-        run: go build -o isabelle
+      - name: Download dependencies and build
+        run: GOOS=linux GOARCH=amd64 go build -i -o isabelle
       - name: Upload artifact
         uses: actions/upload-artifact@v1
         with:
           name: isabelle-linux-x64
           path: isabelle
+  win64:
+    name: Build (Windows x64)
+    runs-on: ubuntu-latest
+    steps:
+      - name: Set up Go 1.14
+        uses: actions/setup-go@v1
+        with:
+          go-version: 1.14
+      - name: Checkout
+        uses: actions/checkout@v1
+      - name: Download dependencies and build
+        run: GOOS=windows GOARCH=amd64 go build -i -o isabelle.exe
+      - name: Upload artifact
+        uses: actions/upload-artifact@v1
+        with:
+          name: isabelle-windows-x64
+          path: isabelle.exe
