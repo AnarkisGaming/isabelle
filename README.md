@@ -8,19 +8,19 @@ If you are using Go 1.14+, download it using `go get` (this will place the execu
 go get -u get.cutie.cafe/isabelle
 ```
 
-Otherwise, you should be able to use a stable release from the Releases section. NB: if you're using ancient versions of Linux, you may have to build the app yourself.
+Otherwise, you should be able to use a stable release from the Releases section. NB: if you're using ancient versions of Linux, you may have to build the app yourself (see below).
 
-Then, download config.json.example and move it to config.json. Fill out all the fields. After, you can just run `isabelle.exe` or `./isabelle`.
+Then, download config.json.example and move it to config.json. Fill out all of the fields. After, you can just run `isabelle.exe` or `./isabelle`.
 
 ## Advanced/extra steps
-We're dealing with a lot of user-generated content here, so maaaaybe you should run Isabelle inside something like [ops](https://ops.city) or Docker just in case. A sample ops.json file has been included. Use it like this:
+We're dealing with a lot of user-generated content here, so maaaaybe you should run Isabelle inside something like [ops](https://ops.city) or Docker just in case. A sample `ops.json` file has been included. Use it like this:
 
 ```
 ops run -n ~/go/bin/isabelle -c ops.json
 ```
 
 ## Building
-Clone the repository and then run `go build`. A `go.mod` and `go.sum` have been included, so dependencies should resolve just fine.
+Clone the repository and then run `go build -i` to install dependencies and build.
 
 ## License
 The GNU AGPL. See the `LICENSE` file for details. In short:
