@@ -7,7 +7,7 @@ Accept app crash ZIPs via Discord or e-mail and post them as Discord messages an
 If you are using Go 1.14+, download it using `go get` (this will place the executable in `$GOBIN`):
 
 ```
-go get -u get.cutie.cafe/isabelle
+GO111MODULE=on go get -u get.cutie.cafe/isabelle
 ```
 
 Otherwise, you should be able to use a [stable release](https://github.com/AnarkisGaming/isabelle/releases) or [development release](https://github.com/AnarkisGaming/isabelle/actions). If you're using ancient versions of Linux, you may have to build the app yourself (see below).
