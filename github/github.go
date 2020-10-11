@@ -39,5 +39,5 @@ func CreateIssue(issueTitle string, issueBody string) (string, error) {
 		return "", fmt.Errorf("issue was null")
 	}
 
-	return fmt.Sprintf("https://github.com/%s/%d", config.Config.GitHub.Repo, issue.Number), nil
+	return *issue.HTMLURL, nil
 }
