@@ -1,9 +1,11 @@
 # Isabelle
 Accept app crash ZIPs via Discord or e-mail and post them as Discord messages and GitHub issues
 
-[![Build](https://github.com/AnarkisGaming/isabelle/workflows/Build/badge.svg?event=push)](https://github.com/AnarkisGaming/isabelle/actions)
+[![Build](https://github.com/AnarkisGaming/isabelle/workflows/Build/badge.svg?event=push)](https://github.com/AnarkisGaming/isabelle/actions) [![Build](https://github.com/AnarkisGaming/isabelle/workflows/Publish Docker image/badge.svg?event=release)](https://github.com/AnarkisGaming/isabelle/actions)
 
 ## Set up
+
+### Natively
 If you are using Go 1.15+, download it using `go get` (this will place the executable in `$GOBIN`):
 
 ```
@@ -14,15 +16,22 @@ Otherwise, you should be able to use a [stable release](https://github.com/Anark
 
 Then, download config.json.example and move it to config.json. Fill out all of the fields. After, you can just run `isabelle.exe` or `./isabelle`.
 
-## Advanced/extra steps
-We're dealing with a lot of user-generated content here, so maaaaybe you should run Isabelle inside something like [ops](https://ops.city) or Docker just in case. A sample `ops.json` file has been included. Use it like this:
+### via Docker
+Download config.json.example, rename it to config.json, and fill out all of the fields. Then:
+
+```
+docker run -it -v /path/to/config.json:/app/config.json -d anarkisgaming/isabelle
+```
+
+### via `ops`
+A sample `ops.json` file is provided. Install isabelle, make sure you have a valid `config.json` and then:
 
 ```
 ops run -n ~/go/bin/isabelle -c ops.json
 ```
 
 ## Building
-Clone the repository and then run `go build -i` to install dependencies and build.
+Clone the repository and then run `GO111MODULE=on go build` to install dependencies and build.
 
 ## License
 The GNU AGPL. See the `LICENSE` file for details. In short:
