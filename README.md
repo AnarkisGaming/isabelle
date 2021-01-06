@@ -1,7 +1,7 @@
 # Isabelle
 Accept app crash ZIPs via Discord or e-mail and post them as Discord messages and GitHub issues
 
-[![Build](https://github.com/AnarkisGaming/isabelle/workflows/Build/badge.svg?event=push)](https://github.com/AnarkisGaming/isabelle/actions) [![Build](https://github.com/AnarkisGaming/isabelle/workflows/Publish Docker image/badge.svg?event=release)](https://github.com/AnarkisGaming/isabelle/actions)
+[![Build](https://github.com/AnarkisGaming/isabelle/workflows/Build/badge.svg?event=push)](https://github.com/AnarkisGaming/isabelle/actions) ![Publish Docker image](https://github.com/AnarkisGaming/isabelle/workflows/Publish%20Docker%20image/badge.svg)
 
 ## Set up
 
