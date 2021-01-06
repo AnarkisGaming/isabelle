@@ -4,7 +4,7 @@ Accept app crash ZIPs via Discord or e-mail and post them as Discord messages an
 [![Build](https://github.com/AnarkisGaming/isabelle/workflows/Build/badge.svg?event=push)](https://github.com/AnarkisGaming/isabelle/actions)
 
 ## Set up
-If you are using Go 1.14+, download it using `go get` (this will place the executable in `$GOBIN`):
+If you are using Go 1.15+, download it using `go get` (this will place the executable in `$GOBIN`):
 
 ```
 GO111MODULE=on go get -u get.cutie.cafe/isabelle
