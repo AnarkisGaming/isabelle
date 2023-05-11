@@ -4,7 +4,7 @@ import (
 	"encoding/json"
 	"io/ioutil"
 
-	"get.cutie.cafe/isabelle/types"
+	"github.com/AnarkisGaming/isabelle/types"
 )
 
 var (

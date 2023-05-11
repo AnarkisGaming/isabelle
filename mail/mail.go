@@ -7,9 +7,9 @@ import (
 	"io/ioutil"
 	"strings"
 
-	"get.cutie.cafe/isabelle/config"
-	"get.cutie.cafe/isabelle/crash"
-	"get.cutie.cafe/isabelle/discord"
+	"github.com/AnarkisGaming/isabelle/config"
+	"github.com/AnarkisGaming/isabelle/crash"
+	"github.com/AnarkisGaming/isabelle/discord"
 	"github.com/DusanKasan/parsemail"
 	"github.com/bytbox/go-pop3"
 	"github.com/carlescere/scheduler"

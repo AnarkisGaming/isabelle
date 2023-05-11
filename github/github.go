@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"strings"
 
-	"get.cutie.cafe/isabelle/config"
+	"github.com/AnarkisGaming/isabelle/config"
 	"github.com/google/go-github/v31/github"
 	"golang.org/x/oauth2"
 )

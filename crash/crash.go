@@ -7,8 +7,8 @@ import (
 	"io/ioutil"
 	"strings"
 
-	"get.cutie.cafe/isabelle/config"
-	"get.cutie.cafe/isabelle/types"
+	"github.com/AnarkisGaming/isabelle/config"
+	"github.com/AnarkisGaming/isabelle/types"
 )
 
 // Parse an Exception. Caveat emptor: if Config.Files.File1 ends in .xml, it is parsed as a SerializableException.

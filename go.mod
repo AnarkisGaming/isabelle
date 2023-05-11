@@ -1,4 +1,4 @@
-module get.cutie.cafe/isabelle
+module github.com/AnarkisGaming/isabelle
 
 go 1.20
 

@@ -9,7 +9,7 @@ Accept app crash ZIPs via Discord or e-mail and post them as Discord messages an
 If you are using Go 1.15+, download it using `go get` (this will place the executable in `$GOBIN`):
 
 ```
-GO111MODULE=on go get -u get.cutie.cafe/isabelle
+GO111MODULE=on go get -u github.com/AnarkisGaming/isabelle
 ```
 
 Otherwise, you should be able to use a [stable release](https://github.com/AnarkisGaming/isabelle/releases) or [development release](https://github.com/AnarkisGaming/isabelle/actions). If you're using ancient versions of Linux, you may have to build the app yourself (see below).
@@ -21,13 +21,6 @@ Download config.json.example, rename it to config.json, and fill out all of the 
 
 ```
 docker run -it -v /path/to/config.json:/app/config.json -d anarkisgaming/isabelle
-```
-
-### via `ops`
-A sample `ops.json` file is provided. Install isabelle, make sure you have a valid `config.json` and then:
-
-```
-ops run -n ~/go/bin/isabelle -c ops.json
 ```
 
 ## Building

@@ -8,9 +8,9 @@ import (
 	"net/http"
 	"strings"
 
-	"get.cutie.cafe/isabelle/config"
-	"get.cutie.cafe/isabelle/crash"
-	"get.cutie.cafe/isabelle/github"
+	"github.com/AnarkisGaming/isabelle/config"
+	"github.com/AnarkisGaming/isabelle/crash"
+	"github.com/AnarkisGaming/isabelle/github"
 	"github.com/bwmarrin/discordgo"
 )
 

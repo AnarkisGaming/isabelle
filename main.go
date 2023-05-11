@@ -6,10 +6,10 @@ import (
 	"os/signal"
 	"syscall"
 
-	"get.cutie.cafe/isabelle/config"
-	"get.cutie.cafe/isabelle/discord"
-	"get.cutie.cafe/isabelle/github"
-	"get.cutie.cafe/isabelle/mail"
+	"github.com/AnarkisGaming/isabelle/config"
+	"github.com/AnarkisGaming/isabelle/discord"
+	"github.com/AnarkisGaming/isabelle/github"
+	"github.com/AnarkisGaming/isabelle/mail"
 )
 
 func main() {
