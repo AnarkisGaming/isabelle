@@ -14,7 +14,7 @@ import (
 
 func main() {
 	fmt.Println("Isabelle")
-	fmt.Println("Copyright (c) 2020 Anarkis Gaming/Cutie Cafe")
+	fmt.Println("Copyright (c) 2023 Anarkis Gaming/Cutie Cafe")
 	fmt.Println("This program is free software; see the LICENSE file for details.")
 	fmt.Println("")
 
